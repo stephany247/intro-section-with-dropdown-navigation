@@ -135,8 +135,8 @@ const RegistrationPage: React.FC = () => {
   };
 
   return (
-    <main className="min-h-screen flex items-center m-auto bg-[url('../assets/images/image-hero-mobile.png')] bg-cover bg-center">
-      <div className="flex flex-col md:flex-row items-center justify-center bg-almost-white shadow-2xl rounded-2xl p-4 md:gap-10 w-full max-w-3xl md:m-auto">
+    <main className="min-h-screen flex items-center m-auto bg-almost-white ">
+      <div className="flex flex-col md:flex-row items-center justify-center bg-white shadow-2xl rounded-2xl p-4 md:gap-10 w-full max-w-3xl md:mx-auto md:my-12">
         <img src={heroImage} alt="Snap Logo" className="w-1/2 h-full opacity-90 hidden md:block" />
         <img src={logo} alt="Snap Logo" className="mt-8 md:hidden" />
         <div className="w-full p-4 max-w-md rounded-2xl">
@@ -148,7 +148,7 @@ const RegistrationPage: React.FC = () => {
               {serverError}
             </div>
           )}
-          <form onSubmit={handleSubmit} className="space-y-1">
+          <form onSubmit={handleSubmit} className="space-y-0">
             <InputField
               label="Full Name"
               type="text"
@@ -191,7 +191,7 @@ const RegistrationPage: React.FC = () => {
             />
             <button
               type="submit"
-              className="w-full bg-almost-black text-white py-3 rounded-xl mt-4 hover:bg-white hover:text-almost-black border border-almost-black transition-colors duration-300 ease-in-out"
+              className="w-full bg-almost-black text-white py-3 rounded-xl mt-2 hover:bg-white hover:text-almost-black border border-almost-black transition-colors duration-300 ease-in-out"
             >
               Register
             </button>
@@ -200,16 +200,16 @@ const RegistrationPage: React.FC = () => {
             Already have an account?{" "}
             <a
               href="/login"
-              className="text-almost-black font-medium hover:underline"
+              className="text-almost-black font-medium underline"
             >
               Login
             </a>
           </p>
-          <p className="text-center text-sm text-medium-gray mt-6">
+          <p className="text-center text-sm text-medium-gray mt-2">
             Back to Home?{" "}
             <a
               href="/"
-              className="text-almost-black font-medium hover:underline"
+              className="text-almost-black font-medium underline"
             >
               Home
             </a>

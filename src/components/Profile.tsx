@@ -22,14 +22,14 @@ export default function Profile() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
       <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-md">
-        {/* <div className="flex items-center justify-center mb-6">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Profile"
-            className="w-24 h-24 rounded-full"
-          />
-        </div> */}
+        <div className="flex flex-col items-center justify-center mb-6">
         <h2 className="text-2xl font-bold text-center mb-4">Profile</h2>
+          <img
+            src={user.image}
+            alt="Profile"
+            className="w-20 h-20 rounded-full border"
+          />
+        </div>
         <div className="mb-4">
           <p className="text-gray-700"><strong>Name:</strong> {user.name}</p>
           <p className="text-gray-700"><strong>Email:</strong> {user.email}</p>

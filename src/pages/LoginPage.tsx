@@ -36,7 +36,7 @@ const LoginPage: React.FC = () => {
       const data = JSON.parse(text);
       if (data.success) {
         localStorage.setItem('user_id', data.user_id);
-        navigate('/profile');
+        navigate('/dashboard');
       } else {
         setError(data.message || "Login failed");
       }
